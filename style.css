@@ -743,3 +743,11 @@ div.comment:first-of-type {
     background-color: white;
     color: #6610f2;
 }
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+ }
