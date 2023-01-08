@@ -13,27 +13,6 @@ get_header(); ?>
 	    <div class='container'>
 			<p class="mt-3 lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-				  <div class="carousel-item active">
-					<img src="images/slider2.jpg" class="d-block w-100" alt="1">
-				  </div>
-				  <div class="carousel-item">
-					<img src="images/slider1.jpg" class="d-block w-100" alt="2">
-				  </div>
-				  <div class="carousel-item">
-					<img src="images/slider3.jpg" class="d-block w-100" alt="3">
-				  </div>
-				</div>
-				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Next</span>
-				</a>
-			  </div>
 			  <section class="theme-bg-dark py-5 mt-4 text-center">
 				<h3 class='text-light d-block'>Subscribe to the Newsletter</h3>
 			    <form class="signup-form form-inline justify-content-center pt-3">
@@ -63,7 +42,7 @@ $the_query = new WP_Query( $arg );
 		$the_query->the_post();
 
 ?>
-				  <div class="card text">
+				  <div class="card shadow">
 					<div class="card-body">
 					  <h5 class="card-title"><?php the_title( ) ?> </h5>
 					  <p class="card-text"><?php the_excerpt() ?></p>

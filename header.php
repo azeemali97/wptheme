@@ -16,6 +16,26 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
+	<style>
+		 ul{
+
+list-style: none;
+
+
+}
+a {
+    font-size: 18px;
+    font-weight: 600;
+}
+li{
+margin-top:5px;
+	
+}
+img.custom-logo {
+width: 200px;
+height: 150px;
+}
+	</style>
 
 </head> 
 
@@ -36,22 +56,11 @@
                 ?>		
 				
 				<ul class="navbar-nav flex-column text-sm-center text-md-left">
-					<li class="nav-item active">
-					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="post.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Blog Post</a>
+					
+					
                         <?php wp_nav_menu( array('menu' => 'pkey' , 'menu_class' => 'nav-link') ); ?>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="page.html"><i class="fas fa-file-image fa-fw mr-2"></i>Blog Page</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="archive.html"><i class="fas fa-archive fa-fw mr-2"></i>Blog Archive</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link btn btn-primary" href="contact.html"><i class="fas fa-envelope fa-fw mr-2"></i>Contact Us</a>
-					</li>
+					
+					
 				</ul>
 				<hr>
 				<ul class="social-list list-inline py-3 mx-auto">
